@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="22dp">
+    <RelativeLayout
+        android:layout_marginTop="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/background_whitetwo">
+        <ImageView
+            android:id="@+id/phone_img"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:src="@mipmap/i2390206"/>
+        <TextView
+            style="@style/TextStyle63"
+            android:id="@+id/phone_alt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALT -3,87%"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/phone_img"/>
+        <TextView
+            android:id="@+id/phone_date"
+            style="@style/TextStyle64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/phone_alt"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="11dp"
+            android:text="3 Sept 2020"/>
+        <TextView
+            style="@style/TextStyle65"
+            android:id="@+id/phone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_alt"
+            android:layout_toRightOf="@id/phone_img"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="ATLANTIA"/>
+        <TextView
+            style="@style/TextStyle66"
+            android:id="@+id/phone_decryption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/phone_name"
+            android:layout_toRightOf="@id/phone_img"
+            android:text="Illum velit nam voluptatum enim aut\nratione ratione officiis totam.\nMollitia eum sint tempora ducimus"/>
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/gruppo_di_maschere_1_clipped"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="6dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

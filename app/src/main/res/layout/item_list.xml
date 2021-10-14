@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="18dp"
+        android:paddingLeft="37dp"
+        android:paddingRight="27dp">
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/TextStyle45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="DOWN JONES"
+            android:paddingVertical="3.5dp"/>
+        <TextView
+            android:id="@+id/item_money"
+            style="@style/TextStyle48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_aqua"
+            android:layout_alignParentRight="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:text="20.047,50"/>
+        <TextView
+            android:id="@+id/item_contry"
+            style="@style/TextStyle46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:text="NYSE"/>
+        <TextView
+            android:id="@+id/item_time"
+            style="@style/TextStyle47"
+            android:layout_below="@+id/item_name"
+            android:layout_toRightOf="@+id/item_contry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="10:44:45"/>
+        <TextView
+            android:id="@+id/item_growth"
+            style="@style/TextStyle49"
+            android:layout_below="@+id/item_money"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+203 (+1,04%)"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/warm_grey_60"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="33.5dp"
+        android:layout_marginRight="21.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_relativelayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

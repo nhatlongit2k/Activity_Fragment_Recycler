@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_onboarding"
+    app:startDestination="@id/viewPagerFragment">
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.lonhatlong_activity_fragment_recycler.onboarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.lonhatlong_activity_fragment_recycler.onboarding.screen.FragmentLogin"
+        android:label="FragmentLogin" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentEmail"
+            app:destination="@id/fragmentEmail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="com.example.lonhatlong_activity_fragment_recycler.onboarding.screen.FragmentSignUp"
+        android:label="FragmentSignUp" >
+        <action
+            android:id="@+id/action_fragmentSignUp_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_fragmentSignUp_to_fragmentEmail"
+            app:destination="@id/fragmentEmail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEmail"
+        android:name="com.example.lonhatlong_activity_fragment_recycler.onboarding.screen.FragmentEmail"
+        android:label="FragmentEmail" >
+        <action
+            android:id="@+id/action_fragmentEmail_to_fragmentConfirmPasswordChange"
+            app:destination="@id/fragmentConfirmPasswordChange" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentConfirmPasswordChange"
+        android:name="com.example.lonhatlong_activity_fragment_recycler.onboarding.screen.FragmentConfirmPasswordChange"
+        android:label="FragmentConfirmPasswordChange"
+        tools:layout="@layout/fragment_confirm_password_change">
+        <action
+            android:id="@+id/action_fragmentConfirmPasswordChange_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+</navigation>

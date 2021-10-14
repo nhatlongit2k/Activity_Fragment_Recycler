@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeFragment"
+        android:icon="@mipmap/icons_8_increase"
+        android:title="Home"/>
+    <item android:id="@+id/coinFragment"
+        android:icon="@mipmap/icons_8_chart"
+        android:title="Coin"/>
+    <item android:id="@+id/newsFragment"
+        android:icon="@mipmap/icons_8_news"
+        android:title="News"/>
+    <item android:id="@+id/menuFragment"
+        android:icon="@mipmap/icons_8_customer"
+        android:title="Menu" />
+
+</menu>

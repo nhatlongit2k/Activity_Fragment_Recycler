@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp">
+
+            <ImageView
+                android:id="@+id/img_onboarding3_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/icons_8_expand_arrow" />
+
+            <TextView
+                android:id="@+id/tv_boarding3_skip"
+                style="@style/TextStyle75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="39dp"
+                android:text="Skip" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/componente_5_2"
+            android:src="@mipmap/gruppo_di_maschere_4"/>
+        <TextView
+            android:layout_marginTop="58dp"
+            style="@style/TextStyle76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep your"
+            android:layout_marginLeft="46dp"/>
+        <TextView
+            style="@style/TextStyle76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="investment safe"
+            android:layout_marginLeft="46dp"/>
+        <TextView
+            style="@style/TextStyle42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ex totam praesentium incidunt aut."
+            android:layout_marginLeft="46dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_marginLeft="47dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/oval">
+            </View>
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/oval">
+            </View>
+            <View
+                android:layout_marginLeft="5dp"
+                android:layout_width="38dp"
+                android:layout_height="9dp"
+                android:background="@drawable/bacground_button_pink">
+            </View>
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextStyle34"
+            android:id="@+id/tv_onboad3_start"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="51dp"
+            android:background="@drawable/background_button"
+            android:gravity="center"
+            android:text="START" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

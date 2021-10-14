@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_three"
+    tools:context=".NewsArticleFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/componente_6_3"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.128" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="30dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_expand_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icons_8_expand_arrow"/>
+        <TextView
+            android:layout_toRightOf="@+id/img_expand_arrow"
+            android:id="@+id/fragmentnewarticle_title"
+            style="@style/TextStyle62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="EDITORIAL NEWS"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guiline"
+        android:background="@drawable/background_menu_selcect_bar">
+        <LinearLayout
+            android:id="@+id/fragmentnewarticle_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="18dp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/TextStyle44"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_ff0ba"
+                android:paddingVertical="4dp"
+                android:textAlignment="center"
+                android:text="EDITORIAL"/>
+            <TextView
+                style="@style/TextStyle44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="9dp"
+                android:text="CRYPTO NEWS"/>
+            <TextView
+                style="@style/TextStyle44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RAW MATERIAL"/>
+            <TextView
+                style="@style/TextStyle44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ECONOMICS"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/fragmentnewarticle_imgheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/fragmentnewarticle_menu"
+            android:layout_marginHorizontal="26dp"
+            android:src="@mipmap/raggruppa_16"/>
+        <TextView
+            style="@style/TextStyle67"
+            android:id="@+id/fragmentnewarticletvcyp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="CRYPTOCURRENCY"
+            android:layout_below="@+id/fragmentnewarticle_imgheader"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="35dp"
+            android:paddingHorizontal="4.3dp"
+            android:paddingVertical="2dp"
+            android:background="@drawable/background_aqua"/>
+
+        <TextView
+            android:id="@+id/whatisthefuture"
+            style="@style/TextStyle68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragmentnewarticletvcyp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="31dp"
+            android:background="#6021ea"
+            android:paddingLeft="11dp"
+            android:paddingRight="1dp"
+            android:text="What is the future of" />
+        <TextView
+            style="@style/TextStyle68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cryptocurrencies?"
+            android:layout_below="@+id/whatisthefuture"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp"
+            android:background="#6021ea"
+            android:paddingRight="1dp"/>
+        <ImageView
+            android:id="@+id/fragmentnewarticle_imgcalendar"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/icons_8_calendar"
+            android:layout_below="@id/fragmentnewarticletvcyp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="27dp"/>
+        <TextView
+            style="@style/TextStyle69"
+            android:id="@+id/fragmentnewarticle_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragmentnewarticle_imgcalendar"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="9dp"
+            android:text="02 Set 2020"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fragmentnewarticle_date"
+            android:layout_marginTop="32.7dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginRight="43dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStyle70"
+                    android:text="Rem deserunt voluptatem sapiente.
+Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolorreiciendis tenetur libero error consequatur voluptate
+recusandae. Sequi voluptatum quas. Ullam voluptatem reprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.
+Voluptates voluptatem eaque et voluptas maxime molestiae et. Et saepe perferendis ut quidem et est. Et
+iusto ut nostrum delectus. Libero et modi placeat
+labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo." />
+                <TextView
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginRight="43dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="33dp"
+                    style="@style/TextStyle70"
+                    android:text="Rem deserunt voluptatem sapiente.
+Quod sint officiis quae magnam. Qui eaque atque quia. Incidunt dolorreiciendis tenetur libero error consequatur voluptate
+recusandae. Sequi voluptatum quas. Ullam voluptatem reprehenderit ea commodi. Doloremque autem praesentium qui harum quia sunt voluptatem eius at.
+Voluptates voluptatem eaque et voluptas maxime molestiae et. Et saepe perferendis ut quidem et est. Et
+iusto ut nostrum delectus. Libero et modi placeat
+labore sit et quaerat sed. Dolorem libero earum ipsum illum nemo." />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CoinFragment"
+    android:background="@color/white_three">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/relativelayout_neo_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:id="@+id/linearLayout_neo_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/img_back"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+            <TextView
+                style="@style/TextStyle51"
+                android:id="@+id/fragmentcoin_name"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_back"
+                android:text="NEO INDEX" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_usd"
+            style="@style/TextStyle52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/linearLayout_neo_index"
+            android:text="USD"/>
+        <TextView
+            style="@style/TextStyle53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout_neo_index"
+            android:layout_toRightOf="@id/tv_usd"
+            android:layout_marginLeft="18dp"
+            android:text="Binance"/>
+        <ImageView
+            android:id="@+id/menu_vertical"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/icons_8_menu_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/img_fragmentcoin_ring"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_toLeftOf="@+id/menu_vertical"
+            android:background="@drawable/black_circle_background"
+            android:padding="8dp"
+            android:src="@mipmap/icons_8_alarm" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relativelayout_neo_index">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relativelayout_rate_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="26.5dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/background_rate_coin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextStyle54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="46dp"
+                        android:layout_marginTop="17dp"
+                        android:text="RATE" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/icons_8_long_arrow_up" />
+
+                        <TextView
+                            style="@style/TextStyle3"
+                            android:id="@+id/fragmentcoin_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:paddingBottom="6dp"
+                            android:text="21,1637" />
+
+                        <TextView
+                            style="@style/TextStyle55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="bottom"
+                            android:text="USD" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextStyle56"
+                        android:id="@+id/fragmentcoin_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginBottom="19dp"
+                        android:text="17:00:33 Real time" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_change"
+                    style="@style/TextStyle54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="25.3dp"
+                    android:text="TODAY CHANGE" />
+
+                <TextView
+                    style="@style/TextStyle57"
+                    android:id="@+id/fragmentcoin_growth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_change"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="23dp"
+                    android:text="+2,0634 (+9,44%)" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/componente_7_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/relativelayout_rate_money" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="37dp"
+                android:layout_marginTop="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/relativelayout_rate_money">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/image_left" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/image_right" />
+
+                <TextView
+                    style="@style/TextStyle58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/background_aqua"
+                    android:paddingHorizontal="15.5dp"
+                    android:paddingVertical="4.5dp"
+                    android:text="NEO Chart" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_neo_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="23.5dp"
+                android:layout_marginTop="64dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/neo_chart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/relativelayout_rate_money" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_menu_selcect_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_neo_chart"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextStyle59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="General" />
+
+                    <TextView
+                        style="@style/TextStyle60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:background="@drawable/bacground_button_pink"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="5.5dp"
+                        android:text="Technical Section" />
+
+                    <TextView
+                        style="@style/TextStyle59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Markets" />
+
+                    <TextView
+                        style="@style/TextStyle59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Charts" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayout_menu"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="35dp">
+
+                    <TextView
+                        android:id="@+id/tv_by_sell"
+                        style="@style/TextStyle61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Buy or Sell for NEO" />
+
+                    <TextView
+                        android:id="@+id/tv_mkt_capitalization"
+                        style="@style/TextStyle61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="46dp"
+                        android:text="Mkt Capitalization" />
+
+                    <ImageView
+                        android:layout_width="105dp"
+                        android:layout_height="97dp"
+                        android:layout_below="@+id/tv_by_sell"
+                        android:background="@drawable/background_white"
+                        android:paddingHorizontal="9.8dp"
+                        android:paddingVertical="7dp"
+                        android:src="@mipmap/raggruppa_38" />
+
+                    <ImageView
+                        android:layout_width="177.4dp"
+                        android:layout_height="97dp"
+                        android:layout_below="@+id/tv_mkt_capitalization"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/background_white"
+                        android:paddingHorizontal="31.8dp"
+                        android:paddingVertical="14.3dp"
+                        android:src="@mipmap/raggruppa_60" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
